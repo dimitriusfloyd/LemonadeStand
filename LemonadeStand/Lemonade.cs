@@ -11,11 +11,11 @@ namespace LemonadeStand
         public decimal Price { get; set; }
         public decimal Cost { get; set; }
 
-        public decimal Revenue (decimal Price, int NumberOfCups)
+        public decimal Revenue()
         {
             return Price * NumberOfCups;
         }
-        public decimal Profit (decimal Price, decimal Cost)
+        public decimal Profit()
         {
 
             return Price - Cost;
