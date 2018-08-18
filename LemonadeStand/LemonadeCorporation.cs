@@ -12,9 +12,15 @@ namespace LemonadeStand
         public static decimal CorpExpepnses { get; set; }
         public static decimal CorpProfit { get; set; }
 
-        public decimal Revenue(decimal Price, int NumberOfCups)
+        public decimal Revenue()
         {
-            return Price * NumberOfCups;
+            decimal totalRevenue = 0;
+            foreach(Lemonade stand in lemonadestands)
+            {
+                totalRevenue += stand.Revenue();
+            }
+
+            return totalRevenue;
         }
 
         public decimal Profit(decimal Price, decimal Cost)
