@@ -6,7 +6,7 @@ namespace LemonadeStand
 {
     class LemonadeCorporation
     {
-        List<ListOfStands> lemonadestands = new List<ListOfStands>();
+        List<Lemonade> lemonadestands = new List<Lemonade>();
 
         public static decimal CorpRevenue { get; set; }
         public static decimal CorpExpepnses { get; set; }

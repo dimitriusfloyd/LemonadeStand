@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LemonadeStand
 {
@@ -7,24 +8,24 @@ namespace LemonadeStand
         static void Main(string[] args)
         {
             Lemonade myStand1 = new Lemonade();
-            myStand.NameOfStand = "Good Lemonade";
-            myStand.NumberOfCups = 100;
-            myStand.Price = 1;
-            myStand.Cost = .25;
+            myStand1.NameOfStand = "Good Lemonade";
+            myStand1.NumberOfCups = 100;
+            myStand1.Price = 1;
+            myStand1.Cost = .25m;
 
             Lemonade myStand2 = new Lemonade();
             myStand2.NameOfStand = "Really Good Lemonade";
             myStand2.NumberOfCups = 200;
-            myStand2.Price = 1.50;
-            myStand2.Cost = .50;
+            myStand2.Price = 1.50m;
+            myStand2.Cost = .50m;
 
-            List<LemonadeStand> lemonadeStandList = new List<LemonadeStand>();
-           
-            foreach (string lemonadestand in lemonadeStandList)
+            List<Lemonade> lemonadeStandList = new List<Lemonade>();
+
+            foreach (Lemonade lemonadestand in lemonadeStandList)
             {
-                lemonadeStandList.Add();
+                lemonadeStandList.Add(lemonadestand);
             }
-            
+
 
             Console.WriteLine("Welcome!");
             Console.WriteLine("What will the name of your lemonade stand be?");
@@ -43,4 +44,5 @@ namespace LemonadeStand
             decimal Revenue = NumberOfCups * Price;
         }
     }
+}
 
