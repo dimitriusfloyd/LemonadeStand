@@ -7,12 +7,8 @@ namespace LemonadeStand
     {
         static void Main(string[] args)
         {
-            Lemonade myStand1 = new Lemonade();
-            myStand1.NameOfStand = "Good Lemonade";
-            myStand1.NumberOfCups = 100;
-            myStand1.Price = 1;
-            myStand1.Cost = .25m;
-
+            Lemonade myStand1 = new Lemonade() { NameOfStand = "Good Lemonade", NumberOfCups = 100, Price = 1, Cost = .25m };
+            
             Lemonade myStand2 = new Lemonade();
             myStand2.NameOfStand = "Really Good Lemonade";
             myStand2.NumberOfCups = 200;
