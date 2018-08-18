@@ -36,7 +36,7 @@ namespace LemonadeStand
             Console.WriteLine("Thanks!");
             Console.WriteLine("How much will you sell each cup for?");
 
-            decimal Price = Int32.Parse(Console.ReadLine());
+            decimal Price = decimal.Parse(Console.ReadLine());
             decimal Revenue = NumberOfCups * Price;
         }
     }
